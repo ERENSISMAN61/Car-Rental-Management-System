@@ -5,32 +5,32 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<!-- The Basics -->
-	<groupId>com.ucoruh.calculator</groupId>
-	<artifactId>calculator-app</artifactId>
+	<groupId>ce204_hw4</groupId>
+	<artifactId>ce204_hw4</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<!-- More Project Information -->
-	<name>calculator-app</name>
-	<url>https://github.com/ucoruh/eclipse-java-maven-template</url>
+	<name>ce204_hw4</name>
+	<url>https://github.com/ERENSISMAN61/ce204-hw4-eren-sisman</url>
 	<scm>
-		<url>https://github.com/ucoruh/eclipse-java-maven-template</url>
+		<url>https://github.com/ERENSISMAN61/ce204-hw4-eren-sisman</url>
 	</scm>
 	<inceptionYear>2023</inceptionYear>
 	<developers>
 		<developer>
-			<name>Asst. Prof. Dr. Ugur CORUH</name>
+			<name>Eren SISMAN</name>
 			<organization>RTEU</organization>
-			<email>ugur.coruh@erdogan.edu.tr</email>
+			<email>eren_sisman20@erdogan.edu.tr</email>
 			<roles>
 				<role>Developer</role>
 				<role>Designer</role>
 			</roles>
 		</developer>
 		<developer>
-			<name>Other Person</name>
+			<name>Resul BESER</name>
 			<organization>RTEU</organization>
-			<email>mail@gmail.com</email>
+			<email>resul_beser20@erdogan.edu.tr</email>
 			<roles>
 				<role>Developer</role>
 			</roles>
@@ -46,14 +46,6 @@
 				<role>Designer</role>
 			</roles>
 		</contributor>
-		<contributor>
-			<name>Other Person</name>
-			<organization>RTEU</organization>
-			<email>mail@gmail.com</email>
-			<roles>
-				<role>Developer</role>
-			</roles>
-		</contributor>
 	</contributors>
 	<description>Maven Example Template Project</description>
 	<organization>
@@ -63,7 +55,7 @@
 	<!-- Environment Settings -->
 	<issueManagement>
 		<system>Github</system>
-		<url>https://github.com/ucoruh/eclipse-java-maven-template</url>
+		<url>https://github.com/ERENSISMAN61/ce204-hw4-eren-sisman</url>
 	</issueManagement>
 	<ciManagement>
 		<system>Github</system>
@@ -76,25 +68,25 @@
 				<sendOnWarning>true</sendOnWarning>
 			</notifier>
 		</notifiers>
-		<url>https://github.com/ucoruh/eclipse-java-maven-template</url>
+		<url>https://github.com/ERENSISMAN61/ce204-hw4-eren-sisman</url>
 	</ciManagement>
 	<repositories>
 		<repository>
-			<id>eclipse-java-maven-template</id>
-			<name>eclipse-java-maven-template</name>
-			<url>https://github.com/ucoruh/eclipse-java-maven-template</url>
+			<id>ce204-hw4-eren-sisman</id>
+			<name>ce204-hw4-eren-sisman</name>
+			<url>https://github.com/ERENSISMAN61/ce204-hw4-eren-sisman</url>
 		</repository>
 	</repositories>
 	<distributionManagement>
 		<site>
-			<name>https://github.com/ucoruh/eclipse-java-maven-template</name>
-			<id>eclipse-java-maven-template</id>
+			<name>https://github.com/ERENSISMAN61/ce204-hw4-eren-sisman</name>
+			<id>ce204-hw4-eren-sisman</id>
 		</site>
-		<downloadUrl>https://github.com/ucoruh/eclipse-java-maven-template</downloadUrl>
+		<downloadUrl>https://github.com/ERENSISMAN61/ce204-hw4-eren-sisman</downloadUrl>
 		<repository>
-			<id>eclipse-java-maven-template</id>
-			<name>eclipse-java-maven-template</name>
-			<url>https://github.com/ucoruh/eclipse-java-maven-template</url>
+			<id>ce204-hw4-eren-sisman</id>
+			<name>ce204-hw4-eren-sisman</name>
+			<url>https://github.com/ERENSISMAN61/ce204-hw4-eren-sisman</url>
 		</repository>
 	</distributionManagement>
 	<properties>
@@ -145,8 +137,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<includes>
-						<include>**/CalculatorAppTest.java</include>
-						<include>**/CalculatorTest.java</include>
+						<include>**/Tests.java</include>
 					</includes>
 				</configuration>
 			</plugin>
@@ -250,7 +241,7 @@
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>
-										com.ucoruh.calculator.CalculatorApp</mainClass>
+										App.App</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
