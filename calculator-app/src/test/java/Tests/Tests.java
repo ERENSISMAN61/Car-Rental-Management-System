@@ -739,12 +739,46 @@ public class Tests {
 		user.setFirstName("Abraham");
 		assertEquals("Abraham", user.getFirstName());
 	}
+
+	/**
+	 * 
+	 * @name testReLogin
+	 * 
+	 * @brief Test for re login for error.
+	 */
+	@Test
+    public void testReLogin() {
+        List<User> userList = new ArrayList<>();
+        LoginImpl login = new LoginImpl(userList);
+        RegistrationImpl registration = new RegistrationImpl(userList);
+        MenuImpl menu = new MenuImpl();
+        Shop shop = new Shop(userList, menu, login, registration);
+        userList.add(new Admin("admin", "admin", "admin", "admin"));
+        shop.INPUT = new Scanner("2\n1\n5");
+        login.input = new Scanner("admin\n0000\nadmin\nadmin\nadmin\n");
+
+        shop.mainMenuController();
+
+        Assert.assertTrue(true);
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/**
 	 * 
 	 * @name testSetLastName
 	 * 
 	 * @brief Test for setting the last name of a user and verifying the getter.
 	 */
+	
+	
 	@Test
 	public void testSetLastName() {
 		User user = new User();
